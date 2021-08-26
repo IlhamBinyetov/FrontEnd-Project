@@ -1,0 +1,23 @@
+.button {
+    display: inline-block;
+    color: $color-white;
+    background-color: $color-primary;
+    border: 1px solid $color-primary-hover;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &.is-primary {
+
+    }
+
+    &.is-small {
+        padding: 7px 14px;
+        font-size: .75rem;
+    }
+
+    &.is-medium {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
