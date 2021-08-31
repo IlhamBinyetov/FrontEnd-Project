@@ -1,0 +1,30 @@
+.button-primary {
+  padding: 10px 20px;
+  white-space: nowrap;
+  background-color: #5b35d4;
+  color: $color-white;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #3898ec;
+  }
+}
+
+.button-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  white-space: nowrap;
+  background-color: #5b35d4;
+  color: $color-white;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 120px;
+  border: none;
+  font-size: 17px;
+  line-height: 150%;
+  font-weight: 400;
+  cursor: pointer;
+  &:hover {
+    background-color: #3898ec;
+  }
+}

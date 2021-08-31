@@ -1,11 +1,13 @@
 @import "../bootstrap-5.1.0/bootstrap-5.1.0/scss/bootstrap-grid.scss";
 @import "../bootstrap-5.1.0/bootstrap-5.1.0/scss/bootstrap-utilities.scss";
+@import "../bootstrap-5.1.0/bootstrap-5.1.0/scss/buttons";
 
 @import "mixins";
 @import "variables";
 @import "typography";
 @import "base";
 @import "common";
+@import "./button";
 
 // Remix & Fontawesome icon scss file imports
 
