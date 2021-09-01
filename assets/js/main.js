@@ -61,3 +61,24 @@ personalInformations.forEach(personalInformation => {
     }
 
 })
+
+// function myFunction() {
+//     var x = document.getElementById("show");
+//     if (x.type === "password") {
+//         x.type = "text";
+//     } else {
+//         x.type = "password";
+//     }
+// }
+
+// let password = document.querySelector("#password");
+// let button = document.querySelector(".button-login");
+// button.addEventListener("click", function () {
+
+//     let text = "";
+//     if (password.innerHTML = "") {
+//         text = "Please fill in your password";
+//     }
+//     document.querySelector("#error-password").innerHTML = text;
+// })
+

@@ -9,6 +9,7 @@
   font-size: 40px;
 }
 body {
+  background-color: $color-primary;
   header {
     position: sticky;
     top: 0;
@@ -30,87 +31,104 @@ body {
         border-radius: 8px;
       }
     }
-  }
-  background-color: $color-primary;
-  .navbar-list {
-    .nav-ul {
-      .how-it-work {
-        // position: relative;
-        .how-it-work-elements {
-          display: none;
-          position: absolute;
-          top: 80%;
-          border: 1px solid #dedcee;
-          border-radius: 8px;
-          background-color: #fff;
-          color: black;
-          padding: 5 10px;
-          width: 200px;
-        }
-      }
-      .resources {
-        // position: relative;
-        .resources-elements {
-          .ml-5:hover a {
-            color: #5b35d5;
-          }
-          font-size: 15px;
-          overflow-y: scroll;
-          position: absolute;
-          // z-index: 0;
-          top: 130%;
-          border: 1px solid #dedcee;
-          width: 330px;
-          background-color: #fff;
-          color: black;
-          max-height: 85vh;
-          border-radius: 8px;
-
-          a {
-            color: #222;
-            padding-left: 15px;
+    .navbar-list {
+      .nav-ul {
+        .how-it-work {
+          // position: relative;
+          .how-it-work-elements {
+            display: none;
+            position: absolute;
+            top: 80%;
+            border: 1px solid #dedcee;
+            border-radius: 8px;
+            background-color: #fff;
+            color: black;
+            padding: 5 10px;
+            width: 200px;
+            li {
+              color: black;
+            }
           }
         }
+        .resources {
+          // position: relative;
+          .resources-elements {
+            .ml-5:hover a {
+              color: #5b35d5;
+            }
+            b {
+              color: black;
+            }
+            a {
+              b {
+                li {
+                  color: black;
+                }
+              }
+            }
+            font-size: 15px;
+            overflow-y: scroll;
+            position: absolute;
+            // z-index: 0;
+            top: 130%;
+            border: 1px solid #dedcee;
+            width: 330px;
+            background-color: #fff;
+            color: black;
+            max-height: 85vh;
+            border-radius: 8px;
+
+            a {
+              color: #222;
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+      .navbar-list-item {
+        padding: 10px 20px;
+      }
+      & .nav-ul li {
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+      & .nav-ul .navbar:hover {
+        background-color: $color-secondary;
+        border: 1px;
+        border-radius: 3px;
+      }
+      .button {
+        border: 1px solid $color-tertiary;
+        border-radius: 5px;
+        margin-left: 5px;
+        min-width: min-content;
+        white-space: nowrap;
+      }
+
+      .book {
+        background-color: #5b35d4;
+        min-width: min-content;
+        white-space: nowrap;
+      }
+      .navbar-list-item:hover {
+        background-color: $color-secondary;
       }
     }
-    .navbar-list-item {
-      padding: 10px 20px;
-    }
-    & .nav-ul li {
-      padding: 10px;
-      cursor: pointer;
-    }
-    & .nav-ul .navbar:hover {
-      background-color: $color-secondary;
-      border: 1px;
-      border-radius: 3px;
-    }
-    .button {
-      border: 1px solid $color-tertiary;
-      border-radius: 5px;
-      margin-left: 5px;
-      min-width: min-content;
-      white-space: nowrap;
-    }
-
-    .book {
-      background-color: #5b35d4;
-      min-width: min-content;
-      white-space: nowrap;
-    }
-    .navbar-list-item:hover {
-      background-color: $color-secondary;
-    }
   }
+
   main .first-part {
+    background-color: $color-primary;
     padding: 120px 0;
     & h1 {
       margin-bottom: 30px;
       font-weight: 600;
       font-size: 2.76rem;
+      color: white;
     }
     & p {
       margin-bottom: 40px;
+      color: #adaabf;
     }
     & .image-trust {
       height: 40px;
@@ -156,6 +174,7 @@ body {
     }
     .trusted {
       margin-top: 6rem;
+      color: #adaabf;
     }
   }
   main .second-part {
@@ -164,14 +183,14 @@ body {
     @media screen and (max-width: 500px) {
       .second-container {
         padding: 0 5px;
-      }
-      .employing h2 {
-        font-size: 20px;
-        //padding: 10px;
-        line-height: 150%;
-        font-weight: 600;
-        width: 200px;
-        margin-bottom: 20px;
+        .employing h2 {
+          font-size: 20px;
+          //padding: 10px;
+          line-height: 150%;
+          font-weight: 600;
+          width: 200px;
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -181,6 +200,10 @@ h2 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 140%;
+  color: white;
+}
+p {
+  color: white;
 }
 .second-container {
   padding: 80px 60px;
@@ -297,13 +320,15 @@ h2 {
 
   & .onboard {
     margin-bottom: 5rem;
+    & h3 {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      line-height: 150%;
+      font-weight: 400;
+      color: white;
+    }
   }
-  & h3 {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    line-height: 150%;
-    font-weight: 400;
-  }
+
   & p {
     max-width: 80%;
     font-size: 1rem;
@@ -320,6 +345,7 @@ h2 {
       font-weight: 600;
       max-width: 540px;
       text-align: center;
+      color: white;
       @media screen and (max-width: 479px) {
         font-size: 32px;
       }
@@ -332,6 +358,13 @@ h2 {
   }
   & .lastboard {
     margin-bottom: 10rem;
+    & h3 {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      line-height: 150%;
+      font-weight: 400;
+      color: white;
+    }
     @media screen and (max-width: 992px) {
       margin-bottom: 2rem;
     }
@@ -482,8 +515,12 @@ h2 {
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
       height: 70%;
+      .card-title {
+        color: white;
+      }
       .date-part {
         padding-left: 20px;
+        color: #adaabf;
       }
     }
     img {
@@ -523,6 +560,7 @@ h2 {
   }
 }
 .footer {
+  background-color: $color-primary;
   img {
     width: 100%;
   }
@@ -582,8 +620,10 @@ h2 {
     font-size: 16px;
     color: #adaabf;
   }
-  .icons i {
+  .icons img {
     margin-left: 2rem;
+    width: 30px;
+    height: 30px;
   }
 }
 @media screen and (max-width: 500px) {

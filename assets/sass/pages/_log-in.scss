@@ -1,0 +1,127 @@
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  .main-div {
+    aside {
+      padding: 20px;
+      min-height: 100vh;
+
+      background-color: #f8f8fc;
+      .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .small-icons {
+          padding-left: 20px;
+          img {
+            background-color: wheat;
+            margin-right: 10px;
+            padding: 2px;
+          }
+        }
+        .automate {
+          font-family: Inter, sans-serif;
+          font-size: 24px;
+          line-height: 140%;
+          font-weight: 600;
+          color: rgb(91, 85, 127);
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .trusted {
+          font-family: Inter, sans-serif;
+          font-size: 16px;
+          line-height: 150%;
+          font-weight: 600;
+          color: rgb(132, 128, 159);
+          text-align: center;
+        }
+      }
+      .logo {
+        padding: 50px 20px;
+
+        img {
+          margin-right: 20px;
+          border: 1px solid black;
+          padding: 5px;
+          border-radius: 4px;
+          background-color: #5b35d5;
+        }
+        p {
+          color: black;
+          font-weight: 600;
+        }
+      }
+    }
+    .second-div {
+      padding-top: 20%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        margin-bottom: 20px;
+        font-size: 32px;
+        line-height: 140%;
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+      }
+      p {
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+      input {
+        font-size: 16px;
+        line-height: 150%;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        outline: none;
+        margin-bottom: 15px;
+        border-color: lightblue;
+        min-width: 100%;
+      }
+      form {
+        .final-item {
+          a {
+            color: blue;
+            text-decoration: underline;
+            text-underline-position: under;
+          }
+        }
+        button {
+          margin-bottom: 15px;
+        }
+        .labels {
+          margin-bottom: 10px;
+        }
+        p {
+          a {
+            color: blue;
+            text-decoration: underline;
+            text-underline-position: under;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  aside {
+    display: none;
+  }
+}

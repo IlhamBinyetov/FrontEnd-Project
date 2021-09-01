@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="https://assets-global.website-files.com/5fe9c5e22d0827321f923fc1/60144401d8ab4663b07173fa_32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="d-flex flex-wrap">
+        <aside class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
+          <div class="d-flex justify-content-center align-items-center logo">
+            <img src="./assets/images/icon1.svg" alt="" />
+            <p class="ml-4">PANTHER</p>
+          </div>
+          <div class="icons">
+            <p class="automate col-6">
+              Automate your global payroll & compliance
+            </p>
+            <p class="trusted">Trusted by</p>
+            <div class="small-icons">
+              <img src="./assets/images/bigId.png" alt="" />
+              <img src="./assets/images/dwelling.png" alt="" />
+              <img src="./assets/images/fubo.png" alt="" />
+              <img src="./assets/images/draftBit.png" alt="" />
+              <img src="./assets/images/shutter.png" alt="" />
+            </div>
+          </div>
+        </aside>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+          <div class="container">
+            <div class="row">
+              <div class="second-div col-md-12">
+                <div>
+                  <h1>Welcome back!</h1>
+                  <p>Log in to your Panther account.</p>
+                </div>
+                <div>
+                  <form action="">
+                    <div>
+                      <div class="labels">
+                        <label for="email">Email</label>
+                        <span id="error-email"></span>
+                      </div>
+                      <div>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          autocomplete="off"
+                        />
+                      </div>
+                      <div class="labels d-flex justify-content-between">
+                        <label for="password">Password</label>
+                        <span
+                          id="show"
+                          style="cursor: pointer"
+                          onclick="myFunction()"
+                        >
+                          Show</span
+                        >
+                      </div>
+                      <div>
+                        <input type="Password" name="password" id="password" />
+                        <span id="error-password"></span>
+                      </div>
+                    </div>
+                    <button
+                      class="mt-5 btn btn-primary button-login"
+                      style="width: 100%"
+                      type="submit"
+                    >
+                      Log in
+                    </button>
+
+                    <p>
+                      <a href="">Forget Password?</a>
+                    </p>
+
+                    <hr />
+                    <br />
+                    <div class="final-item d-flex">
+                      <p>Don’t have a Panther account?</p>
+                      <a href=""> Sign up </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
