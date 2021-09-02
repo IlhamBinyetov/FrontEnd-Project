@@ -124,6 +124,111 @@ body {
     }
   }
 
+  main {
+    .first-employee-part {
+      background-color: #ebeaf5;
+      padding: 80px 60px;
+      .remote_emp {
+        width: 70%;
+        margin: auto;
+      }
+      h1 {
+        position: static;
+        bottom: 16px;
+        margin-bottom: 24px;
+        color: #0f0d1e;
+        font-size: 50px;
+        line-height: 120%;
+        font-weight: 600;
+        text-align: left;
+        align-self: flex-start;
+        @media screen and (max-width: 992px) {
+          font-size: 30px;
+        }
+      }
+      .empty-div {
+        P {
+          border-radius: 4px;
+          background-color: #5b35d5;
+          font-family: Rajdhani, sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: white;
+          padding: 5px;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+    }
+
+    .second-employee-part {
+      background-color: white;
+      padding: 30px;
+      .info-content {
+        margin-left: 15%;
+        p {
+          color: black;
+          @media screen and (max-width: 350px) {
+            font-size: 15px;
+          }
+        }
+      }
+      .employee-content {
+        width: 70%;
+        margin: auto;
+        @media screen and (max-width: 350px) {
+          width: 80%;
+        }
+      }
+
+      a {
+        color: #5b35d5;
+        font-weight: 500;
+      }
+      img {
+        width: 56px;
+        height: 56px;
+        max-width: none;
+        border-radius: 50px;
+        margin-right: 10px;
+      }
+      p {
+        color: #5b557f;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      hr {
+        width: 70%;
+        margin: 3% auto;
+        @media screen and (max-width: 350px) {
+          width: 82%;
+        }
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 30px;
+        margin-top: 15px;
+        li {
+          color: #5b557f;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      h2 {
+        margin-top: 48px;
+        color: #322b5f;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 36px;
+      }
+    }
+  }
+
   .footer {
     background-color: $color-primary;
     // img {

@@ -3,11 +3,27 @@
 $(document).ready(function () {
     $(".how-it-work").click(function () {
         $(".how-it-work-elements").slideToggle(500);
-        $(".rotate").toggleClass('flip');
+        $(".arrow").toggleClass("rotate");
+        if ($(".arrow").hasClass("rotate")) {
+            $(".arrow").html("&#x2B07");
+        }
+        else {
+            $(".arrow").html("&#x27A1")
+        }
     });
+
+
     $(".resources").click(function () {
         $(".resources-elements").slideToggle(500);
         $(".resources-elements").css("z-index", "-1")
+        $(".arrow_resources").toggleClass("rotate");
+        if ($(".arrow_resources").hasClass("rotate")) {
+            $(".arrow_resources").html("&#x2B07");
+        }
+        else {
+            $(".arrow_resources").html("&#x27A1")
+        }
+
     });
     $(".how-it-work-hamburger").click(function () {
         $(".how-it-work-hamburger-elements").toggle();
