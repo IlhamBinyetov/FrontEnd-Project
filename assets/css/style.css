@@ -7221,8 +7221,16 @@ body {
     top: 0;
     background-color: #0f0d1e;
     z-index: 1000000; }
+    body header .panther-icon a img {
+      min-width: 90%; }
     body header .custom-hamburger-menu {
       background-color: #1b1734; }
+      body header .custom-hamburger-menu .how-it-work-hamburger {
+        color: white; }
+      body header .custom-hamburger-menu .resources-hamburger {
+        color: white; }
+      body header .custom-hamburger-menu .resources-hamburger-elements li {
+        color: white; }
       body header .custom-hamburger-menu ul li {
         padding: 15px; }
       body header .custom-hamburger-menu .btns .button {
@@ -7762,8 +7770,51 @@ p {
   box-sizing: border-box; }
 
 body {
-  background-color: white;
   color: black; }
+  body .main-div .login-side {
+    background-color: white; }
+    body .main-div .login-side .second-div {
+      padding-top: 20%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .main-div .login-side .second-div h1 {
+        margin-bottom: 20px;
+        font-size: 32px;
+        line-height: 140%;
+        font-family: Inter, sans-serif;
+        font-weight: 600; }
+      body .main-div .login-side .second-div p {
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 400;
+        margin-bottom: 30px; }
+      body .main-div .login-side .second-div input {
+        font-size: 16px;
+        line-height: 150%;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        outline: none;
+        margin-bottom: 15px;
+        border: 1px solid lightblue;
+        min-width: 100%; }
+      body .main-div .login-side .second-div form .final-item a {
+        color: blue;
+        text-decoration: underline;
+        text-underline-position: under; }
+      body .main-div .login-side .second-div form button {
+        margin-bottom: 15px; }
+      body .main-div .login-side .second-div form .labels {
+        margin-bottom: 10px; }
+      body .main-div .login-side .second-div form p {
+        color: blue; }
+        body .main-div .login-side .second-div form p a {
+          color: blue;
+          text-decoration: underline;
+          text-underline-position: under; }
   body .main-div aside {
     padding: 20px;
     min-height: 100vh;
@@ -7805,46 +7856,6 @@ body {
       body .main-div aside .logo p {
         color: black;
         font-weight: 600; }
-  body .main-div .second-div {
-    padding-top: 20%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    body .main-div .second-div h1 {
-      margin-bottom: 20px;
-      font-size: 32px;
-      line-height: 140%;
-      font-family: Inter, sans-serif;
-      font-weight: 600; }
-    body .main-div .second-div p {
-      font-family: Inter, sans-serif;
-      font-size: 16px;
-      line-height: 150%;
-      font-weight: 400;
-      margin-bottom: 30px; }
-    body .main-div .second-div input {
-      font-size: 16px;
-      line-height: 150%;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      outline: none;
-      margin-bottom: 15px;
-      border-color: lightblue;
-      min-width: 100%; }
-    body .main-div .second-div form .final-item a {
-      color: blue;
-      text-decoration: underline;
-      text-underline-position: under; }
-    body .main-div .second-div form button {
-      margin-bottom: 15px; }
-    body .main-div .second-div form .labels {
-      margin-bottom: 10px; }
-    body .main-div .second-div form p a {
-      color: blue;
-      text-decoration: underline;
-      text-underline-position: under; }
 
 @media screen and (max-width: 992px) {
   aside {
@@ -7867,6 +7878,8 @@ body {
     z-index: 1000000; }
     body header .hamburger {
       color: white; }
+    body header .panther-icon a img {
+      min-width: 90%; }
     body header .custom-hamburger-menu {
       background-color: #1b1734; }
       body header .custom-hamburger-menu ul li {
@@ -8082,4 +8095,315 @@ body {
     top: 20%;
     right: 25px;
     font-size: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: 1000000; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body header {
+  position: sticky;
+  top: 0;
+  background-color: #0f0d1e;
+  z-index: 1000000; }
+  body header .hamburger {
+    color: white; }
+  body header .panther-icon a img {
+    min-width: 90%; }
+  body header .custom-hamburger-menu {
+    background-color: #1b1734; }
+    body header .custom-hamburger-menu ul li {
+      padding: 15px; }
+    body header .custom-hamburger-menu .btns .button {
+      padding: 12px 24px;
+      border: 2px solid #322b5f;
+      color: #fff;
+      font-weight: 300;
+      white-space: nowrap;
+      border-radius: 8px; }
+  body header .navbar-list .nav-ul .how-it-work .how-it-work-elements {
+    display: none;
+    position: absolute;
+    top: 80%;
+    border: 1px solid #dedcee;
+    border-radius: 8px;
+    background-color: #fff;
+    color: black;
+    padding: 5 10px;
+    width: 200px; }
+    body header .navbar-list .nav-ul .how-it-work .how-it-work-elements li {
+      color: black; }
+  body header .navbar-list .nav-ul .resources .resources-elements {
+    font-size: 15px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 130%;
+    border: 1px solid #dedcee;
+    width: 330px;
+    background-color: #fff;
+    color: black;
+    max-height: 85vh;
+    border-radius: 8px; }
+    body header .navbar-list .nav-ul .resources .resources-elements .ml-5:hover a {
+      color: #5b35d5; }
+    body header .navbar-list .nav-ul .resources .resources-elements b {
+      color: black; }
+    body header .navbar-list .nav-ul .resources .resources-elements a b li {
+      color: black; }
+    body header .navbar-list .nav-ul .resources .resources-elements a {
+      color: #222;
+      padding-left: 15px; }
+  body header .navbar-list .navbar-list-item {
+    padding: 10px 20px; }
+  body header .navbar-list .nav-ul li {
+    color: white;
+    padding: 10px;
     cursor: pointer; }
+  body header .navbar-list .nav-ul .navbar:hover {
+    background-color: #1b1734;
+    border: 1px;
+    border-radius: 3px; }
+  body header .navbar-list .button {
+    border: 1px solid #322b5f;
+    border-radius: 5px;
+    margin-left: 5px;
+    min-width: min-content;
+    white-space: nowrap; }
+  body header .navbar-list .book {
+    background-color: #5b35d4;
+    min-width: min-content;
+    white-space: nowrap; }
+  body header .navbar-list .navbar-list-item:hover {
+    background-color: #1b1734; }
+
+body main .first {
+  background-color: #0f0d1e; }
+  body main .first h1 {
+    margin-bottom: 48px;
+    align-items: center;
+    font-size: 39px;
+    text-align: left;
+    color: white;
+    line-height: 120%;
+    font-weight: 600; }
+  body main .first img {
+    width: 100%; }
+
+body main .second {
+  background-color: #1b1734;
+  padding: 140px 40px; }
+  body main .second .cards .cards-elements {
+    background-color: #0f0d1e;
+    padding: 30px 10px;
+    border-radius: 16px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 40%;
+    height: 30%; }
+    @media screen and (min-width: 500px) and (max-width: 992px) {
+      body main .second .cards .cards-elements {
+        width: 70%;
+        height: min-content; } }
+    @media screen and (max-width: 500px) {
+      body main .second .cards .cards-elements {
+        width: 100%;
+        height: min-content; } }
+    body main .second .cards .cards-elements h3 {
+      font-size: 24px;
+      line-height: 150%;
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: white; }
+    body main .second .cards .cards-elements p {
+      color: #adaabf;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 24px;
+      line-height: 150%; }
+
+body main .third {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  body main .third h1 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 120%;
+    font-weight: 600; }
+
+body main .fourth {
+  background-color: #1b1734;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  padding-top: 40px; }
+  body main .fourth a {
+    color: #867df3; }
+  body main .fourth h2 {
+    line-height: 120%;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-size: 40px;
+    text-align: left;
+    margin-top: 30px; }
+  body main .fourth .accordion {
+    color: white;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 400; }
+  body main .fourth .panel {
+    padding: 0 18px;
+    background-color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; }
+    body main .fourth .panel p {
+      font-size: 16px;
+      color: #adaabf;
+      margin-top: 10px;
+      font-weight: 300;
+      text-align: left;
+      margin-bottom: 24px;
+      line-height: 150%; }
+  body main .fourth .active,
+  body main .fourth .accordion:hover {
+    background-color: inherit; }
+  body main .fourth .accordion:after {
+    content: "\2192";
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 40px; }
+  body main .fourth .active:after {
+    content: "\2193"; }
+
+body main .fifth {
+  margin-top: 60px;
+  background-color: #0f0d1e;
+  padding: 30px 0; }
+  body main .fifth .icons-items h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 10px; }
+  body main .fifth .icons-items p {
+    margin-bottom: 10px;
+    align-items: stretch;
+    color: #adaabf; }
+  body main .fifth .icons-items a {
+    color: #867df3; }
+  body main .fifth .video-section {
+    margin-bottom: 50px;
+    padding: 60px 20px; }
+    body main .fifth .video-section a {
+      margin-left: 20px; }
+    body main .fifth .video-section .small-heading {
+      margin-bottom: 30px; }
+
+body .footer {
+  background-color: #0f0d1e;
+  padding: 6.5rem 0; }
+  body .footer .company {
+    padding-left: 3rem; }
+  body .footer h2 {
+    margin-bottom: 1rem;
+    font-family: Rajdhani, sans-serif;
+    color: #adaabf;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 1.5p0x;
+    text-transform: uppercase; }
+  body .footer ul li {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 300; }
+  body .footer .legal .input-form {
+    padding-left: 2rem; }
+    body .footer .legal .input-form .text-field {
+      height: 48px;
+      margin-bottom: 16px;
+      border-radius: 4px;
+      color: #0f0d1e;
+      font-size: 17px;
+      font-weight: 400;
+      background-color: #fff;
+      padding: 8px 12px; }
+  body .footer p {
+    color: #adaabf;
+    margin-bottom: 2rem; }
+  body .footer h2 {
+    margin-bottom: 1rem;
+    font-family: Rajdhani, sans-serif;
+    color: #adaabf;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; }
+  body .footer .copyright {
+    padding-top: 4rem; }
+  body .footer .icons img {
+    margin-left: 2rem;
+    width: 30px;
+    height: 30px; }
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s; }
+  .video-container iframe {
+    width: 90%;
+    max-width: 800px;
+    transform: scale(0);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: all 0.3s; }
+
+.show {
+  pointer-events: all;
+  opacity: 1; }
+  .show iframe {
+    transform: scale(1); }
+
+.close {
+  position: absolute;
+  top: 20%;
+  right: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  z-index: 100000; }
+
+@media screen and (max-width: 500px) {
+  .button-secondary {
+    width: 100%; } }

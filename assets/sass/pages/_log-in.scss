@@ -7,9 +7,67 @@
 }
 
 body {
-  background-color: white;
   color: black;
   .main-div {
+    .login-side {
+      background-color: white;
+      .second-div {
+        padding-top: 20%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          margin-bottom: 20px;
+          font-size: 32px;
+          line-height: 140%;
+          font-family: Inter, sans-serif;
+          font-weight: 600;
+        }
+        p {
+          font-family: Inter, sans-serif;
+          font-size: 16px;
+          line-height: 150%;
+          font-weight: 400;
+          margin-bottom: 30px;
+        }
+        input {
+          font-size: 16px;
+          line-height: 150%;
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          outline: none;
+          margin-bottom: 15px;
+          border: 1px solid lightblue;
+          min-width: 100%;
+        }
+        form {
+          .final-item {
+            a {
+              color: blue;
+              text-decoration: underline;
+              text-underline-position: under;
+            }
+          }
+          button {
+            margin-bottom: 15px;
+          }
+          .labels {
+            margin-bottom: 10px;
+          }
+          p {
+            color: blue;
+            a {
+              color: blue;
+              text-decoration: underline;
+              text-underline-position: under;
+            }
+          }
+        }
+      }
+    }
     aside {
       padding: 20px;
       min-height: 100vh;
@@ -59,61 +117,6 @@ body {
         p {
           color: black;
           font-weight: 600;
-        }
-      }
-    }
-    .second-div {
-      padding-top: 20%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      h1 {
-        margin-bottom: 20px;
-        font-size: 32px;
-        line-height: 140%;
-        font-family: Inter, sans-serif;
-        font-weight: 600;
-      }
-      p {
-        font-family: Inter, sans-serif;
-        font-size: 16px;
-        line-height: 150%;
-        font-weight: 400;
-        margin-bottom: 30px;
-      }
-      input {
-        font-size: 16px;
-        line-height: 150%;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        outline: none;
-        margin-bottom: 15px;
-        border-color: lightblue;
-        min-width: 100%;
-      }
-      form {
-        .final-item {
-          a {
-            color: blue;
-            text-decoration: underline;
-            text-underline-position: under;
-          }
-        }
-        button {
-          margin-bottom: 15px;
-        }
-        .labels {
-          margin-bottom: 10px;
-        }
-        p {
-          a {
-            color: blue;
-            text-decoration: underline;
-            text-underline-position: under;
-          }
         }
       }
     }

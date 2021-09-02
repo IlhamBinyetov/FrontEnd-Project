@@ -31,6 +31,28 @@ $(document).ready(function () {
         $('.youtube').contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
     })
 
+    $("#show").click(function () {
+        let x = document.getElementById("password");
+        if (x.type === "password") {
+            x.type = "text";
+            this.innerHTML = "Hide"
+        } else {
+            x.type = "password";
+            this.innerHTML = "Show"
+        }
+    });
+
+    $(".button-login").click(function (e) {
+        e.preventDefault();
+        let pass = $("#password");
+        if (pass.val() == "") {
+            $("#error-password").show();
+            pass.css("border-color", "red")
+        } else {
+            $("#error-password").hide();
+        }
+    })
+
 
 });
 
@@ -62,23 +84,18 @@ personalInformations.forEach(personalInformation => {
 
 })
 
-// function myFunction() {
-//     var x = document.getElementById("show");
-//     if (x.type === "password") {
-//         x.type = "text";
-//     } else {
-//         x.type = "password";
-//     }
-// }
+const acc = document.getElementsByClassName("accordion");
+let i;
 
-// let password = document.querySelector("#password");
-// let button = document.querySelector(".button-login");
-// button.addEventListener("click", function () {
-
-//     let text = "";
-//     if (password.innerHTML = "") {
-//         text = "Please fill in your password";
-//     }
-//     document.querySelector("#error-password").innerHTML = text;
-// })
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
 

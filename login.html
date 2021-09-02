@@ -38,7 +38,7 @@
             </div>
           </div>
         </aside>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 login-side">
           <div class="container">
             <div class="row">
               <div class="second-div col-md-12">
@@ -63,17 +63,15 @@
                       </div>
                       <div class="labels d-flex justify-content-between">
                         <label for="password">Password</label>
-                        <span
-                          id="show"
-                          style="cursor: pointer"
-                          onclick="myFunction()"
-                        >
-                          Show</span
-                        >
+                        <span id="show" style="cursor: pointer"> Show</span>
                       </div>
                       <div>
                         <input type="Password" name="password" id="password" />
-                        <span id="error-password"></span>
+                        <span
+                          id="error-password"
+                          style="display: none; color: red"
+                          >Please fill in your password</span
+                        >
                       </div>
                     </div>
                     <button

@@ -15,7 +15,25 @@ body {
     top: 0;
     background-color: $color-primary;
     z-index: 1000000;
+    .panther-icon {
+      a {
+        img {
+          min-width: 90%;
+        }
+      }
+    }
     .custom-hamburger-menu {
+      .how-it-work-hamburger {
+        color: white;
+      }
+      .resources-hamburger {
+        color: white;
+      }
+      .resources-hamburger-elements {
+        li {
+          color: white;
+        }
+      }
       ul {
         li {
           padding: 15px;
