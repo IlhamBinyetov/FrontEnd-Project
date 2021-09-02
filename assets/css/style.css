@@ -8624,3 +8624,160 @@ body .footer {
     margin-left: 2rem;
     width: 30px;
     height: 30px; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.list {
+  font-size: 40px; }
+
+body header {
+  position: sticky;
+  top: 0;
+  background-color: #0f0d1e;
+  z-index: 1000000; }
+  body header .panther-icon a img {
+    min-width: 90%; }
+  body header .custom-hamburger-menu {
+    background-color: #1b1734; }
+    body header .custom-hamburger-menu .how-it-work-hamburger {
+      color: white; }
+    body header .custom-hamburger-menu .resources-hamburger {
+      color: white; }
+    body header .custom-hamburger-menu .resources-hamburger-elements li {
+      color: white; }
+    body header .custom-hamburger-menu ul li {
+      padding: 15px; }
+    body header .custom-hamburger-menu .btns .button {
+      padding: 12px 24px;
+      border: 2px solid #322b5f;
+      color: #fff;
+      font-weight: 300;
+      white-space: nowrap;
+      border-radius: 8px; }
+  body header .navbar-list .nav-ul .how-it-work .how-it-work-elements {
+    display: none;
+    position: absolute;
+    top: 80%;
+    border: 1px solid #dedcee;
+    border-radius: 8px;
+    background-color: #fff;
+    color: black;
+    padding: 5 10px;
+    width: 200px; }
+    body header .navbar-list .nav-ul .how-it-work .how-it-work-elements li {
+      color: black; }
+  body header .navbar-list .nav-ul .resources .resources-elements {
+    font-size: 15px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 130%;
+    border: 1px solid #dedcee;
+    width: 330px;
+    background-color: #fff;
+    color: black;
+    max-height: 85vh;
+    border-radius: 8px; }
+    body header .navbar-list .nav-ul .resources .resources-elements .ml-5:hover a {
+      color: #5b35d5; }
+    body header .navbar-list .nav-ul .resources .resources-elements b {
+      color: black; }
+    body header .navbar-list .nav-ul .resources .resources-elements a b li {
+      color: black; }
+    body header .navbar-list .nav-ul .resources .resources-elements a {
+      color: #222;
+      padding-left: 15px; }
+  body header .navbar-list .navbar-list-item {
+    padding: 10px 20px; }
+  body header .navbar-list .nav-ul li {
+    color: white;
+    padding: 10px;
+    cursor: pointer; }
+  body header .navbar-list .nav-ul .navbar:hover {
+    background-color: #1b1734;
+    border: 1px;
+    border-radius: 3px; }
+  body header .navbar-list .button {
+    border: 1px solid #322b5f;
+    border-radius: 5px;
+    margin-left: 5px;
+    min-width: min-content;
+    white-space: nowrap; }
+  body header .navbar-list .book {
+    background-color: #5b35d4;
+    min-width: min-content;
+    white-space: nowrap; }
+  body header .navbar-list .navbar-list-item:hover {
+    background-color: #1b1734; }
+
+body .footer {
+  background-color: #0f0d1e;
+  padding: 6.5rem 0; }
+  body .footer img {
+    width: 100%; }
+  body .footer .company {
+    padding-left: 3rem; }
+  body .footer h2 {
+    margin-bottom: 1rem;
+    font-family: Rajdhani, sans-serif;
+    color: #adaabf;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; }
+  body .footer ul li {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 300; }
+  body .footer .legal .input-form {
+    padding-left: 2rem; }
+    body .footer .legal .input-form .text-field {
+      height: 48px;
+      margin-bottom: 16px;
+      border-radius: 4px;
+      color: #0f0d1e;
+      font-size: 17px;
+      font-weight: 400;
+      background-color: #fff;
+      padding: 8px 12px; }
+  body .footer p {
+    color: #adaabf;
+    margin-bottom: 2rem; }
+  body .footer h2 {
+    margin-bottom: 1rem;
+    font-family: Rajdhani, sans-serif;
+    color: #adaabf;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; }
+  body .footer .copyright {
+    padding-top: 4rem; }
+  body .footer p {
+    font-size: 16px;
+    color: #adaabf; }
+  body .footer .icons img {
+    margin-left: 2rem;
+    width: 30px;
+    height: 30px; }
+
+@media screen and (max-width: 992px) {
+  .navbar-list {
+    display: none !important; }
+  .hamburger {
+    display: block !important; } }
+
+@media screen and (max-width: 1260px) {
+  .nav-ul li {
+    font-size: 13px; }
+  .button-primary {
+    margin-left: 10px; } }

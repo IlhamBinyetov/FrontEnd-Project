@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.list {
+  font-size: 40px;
+}
+body {
+  header {
+    position: sticky;
+    top: 0;
+    background-color: $color-primary;
+    z-index: 1000000;
+    .panther-icon {
+      a {
+        img {
+          min-width: 90%;
+        }
+      }
+    }
+    .custom-hamburger-menu {
+      .how-it-work-hamburger {
+        color: white;
+      }
+      .resources-hamburger {
+        color: white;
+      }
+      .resources-hamburger-elements {
+        li {
+          color: white;
+        }
+      }
+      ul {
+        li {
+          padding: 15px;
+        }
+      }
+      background-color: $color-secondary;
+      .btns .button {
+        padding: 12px 24px;
+        border: 2px solid #322b5f;
+        color: #fff;
+        font-weight: 300;
+        white-space: nowrap;
+        border-radius: 8px;
+      }
+    }
+    .navbar-list {
+      .nav-ul {
+        .how-it-work {
+          // position: relative;
+          .how-it-work-elements {
+            display: none;
+            position: absolute;
+            top: 80%;
+            border: 1px solid #dedcee;
+            border-radius: 8px;
+            background-color: #fff;
+            color: black;
+            padding: 5 10px;
+            width: 200px;
+            li {
+              color: black;
+            }
+          }
+        }
+        .resources {
+          // position: relative;
+          .resources-elements {
+            .ml-5:hover a {
+              color: #5b35d5;
+            }
+            b {
+              color: black;
+            }
+            a {
+              b {
+                li {
+                  color: black;
+                }
+              }
+            }
+            font-size: 15px;
+            overflow-y: scroll;
+            position: absolute;
+            // z-index: 0;
+            top: 130%;
+            border: 1px solid #dedcee;
+            width: 330px;
+            background-color: #fff;
+            color: black;
+            max-height: 85vh;
+            border-radius: 8px;
+
+            a {
+              color: #222;
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+      .navbar-list-item {
+        padding: 10px 20px;
+      }
+      & .nav-ul li {
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+      & .nav-ul .navbar:hover {
+        background-color: $color-secondary;
+        border: 1px;
+        border-radius: 3px;
+      }
+      .button {
+        border: 1px solid $color-tertiary;
+        border-radius: 5px;
+        margin-left: 5px;
+        min-width: min-content;
+        white-space: nowrap;
+      }
+
+      .book {
+        background-color: #5b35d4;
+        min-width: min-content;
+        white-space: nowrap;
+      }
+      .navbar-list-item:hover {
+        background-color: $color-secondary;
+      }
+    }
+  }
+
+  .footer {
+    background-color: $color-primary;
+    img {
+      width: 100%;
+    }
+    padding: 6.5rem 0;
+    .company {
+      padding-left: 3rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      font-family: Rajdhani, sans-serif;
+      color: #adaabf;
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 500;
+      text-align: left;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    ul li {
+      margin-bottom: 1rem;
+      font-size: 16px;
+      line-height: 150%;
+      font-weight: 300;
+    }
+    .legal .input-form {
+      padding-left: 2rem;
+      .text-field {
+        height: 48px;
+        margin-bottom: 16px;
+        border-radius: 4px;
+        color: #0f0d1e;
+        font-size: 17px;
+        font-weight: 400;
+        background-color: #fff;
+        padding: 8px 12px;
+      }
+    }
+    p {
+      color: #adaabf;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      font-family: Rajdhani, sans-serif;
+      color: #adaabf;
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 500;
+      text-align: left;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .copyright {
+      padding-top: 4rem;
+    }
+    p {
+      font-size: 16px;
+      color: #adaabf;
+    }
+    .icons img {
+      margin-left: 2rem;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-list {
+    display: none !important;
+  }
+  .hamburger {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .nav-ul {
+    li {
+      font-size: 13px;
+    }
+  }
+  .button-primary {
+    margin-left: 10px;
+  }
+}
