@@ -10,6 +10,8 @@ $(document).ready(function () {
         else {
             $(".arrow").html("&#x27A1")
         }
+
+
     });
 
 
@@ -68,6 +70,18 @@ $(document).ready(function () {
             $("#error-password").hide();
         }
     })
+
+    $(".button-login").click(function (e) {
+        e.preventDefault();
+        let email = $("#email");
+        if (email.val() == "") {
+            $("#error-email").show();
+            email.css("border-color", "red")
+        } else {
+            $("#error-email").hide();
+        }
+    })
+
 
 
 });

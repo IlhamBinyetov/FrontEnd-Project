@@ -51,7 +51,6 @@
                     <div>
                       <div class="labels">
                         <label for="email">Email</label>
-                        <span id="error-email"></span>
                       </div>
                       <div>
                         <input
@@ -59,8 +58,13 @@
                           name="email"
                           id="email"
                           autocomplete="off"
+                          required
                         />
+                        <span id="error-email" style="display: none; color: red"
+                          >Please fill in a valid email address.</span
+                        >
                       </div>
+                      <br />
                       <div class="labels d-flex justify-content-between">
                         <label for="password">Password</label>
                         <span id="show" style="cursor: pointer"> Show</span>
