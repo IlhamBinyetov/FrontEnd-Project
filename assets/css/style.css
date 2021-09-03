@@ -8974,6 +8974,9 @@ body main .first-remote-section {
     margin-left: 30px; }
     body main .first-remote-section .contact:hover {
       background-color: green; }
+    @media screen and (max-width: 501px) {
+      body main .first-remote-section .contact {
+        margin-left: 0px; } }
 
 body main .second-remote-section {
   background-color: #1b1734;
@@ -8986,7 +8989,6 @@ body main .second-remote-section {
     letter-spacing: 0.6px;
     text-transform: uppercase;
     color: white;
-    width: 17%;
     font-size: 14px;
     line-height: 25px;
     font-weight: 400; }
@@ -9013,7 +9015,6 @@ body main .third-remote-section {
     letter-spacing: 0.6px;
     text-transform: uppercase;
     color: white;
-    width: 20%;
     font-size: 14px;
     line-height: 25px;
     font-weight: 400; }
@@ -9056,6 +9057,10 @@ body main .fourth-remote-section {
     padding: 48px;
     border-radius: 16px;
     background-color: #5b35d5; }
+    @media screen and (max-width: 768px) {
+      body main .fourth-remote-section .latest-news {
+        padding: 30px;
+        width: 100%; } }
     body main .fourth-remote-section .latest-news .mini-span {
       border: 1px solid white;
       color: white;
@@ -9069,6 +9074,9 @@ body main .fourth-remote-section {
       margin-top: 30px;
       color: #fff;
       width: 100%; }
+      @media screen and (max-width: 768px) {
+        body main .fourth-remote-section .latest-news h2 {
+          font-size: 20px; } }
     body main .fourth-remote-section .latest-news .read-btn {
       background-color: #0f0d1e;
       border: 1px solid transparent;
@@ -9158,6 +9166,61 @@ body main .fifth-remote-section {
       font-size: 18px;
       text-align: center;
       line-height: 150%; }
+
+body main .sixth-remote-section {
+  background-color: #1b1734;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  padding-top: 40px; }
+  body main .sixth-remote-section a {
+    color: #867df3; }
+  body main .sixth-remote-section h2 {
+    line-height: 120%;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 30px; }
+  body main .sixth-remote-section .accordion {
+    color: white;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 400; }
+  body main .sixth-remote-section .panel {
+    padding: 0 18px;
+    background-color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; }
+    body main .sixth-remote-section .panel p {
+      font-size: 16px;
+      color: #adaabf;
+      margin-top: 10px;
+      font-weight: 300;
+      text-align: left;
+      margin-bottom: 24px;
+      line-height: 150%; }
+  body main .sixth-remote-section .active,
+  body main .sixth-remote-section .accordion:hover {
+    background-color: inherit; }
+  body main .sixth-remote-section .accordion:after {
+    content: "\2192";
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 40px; }
+  body main .sixth-remote-section .active:after {
+    content: "\2193"; }
 
 .footer {
   background-color: #0f0d1e;

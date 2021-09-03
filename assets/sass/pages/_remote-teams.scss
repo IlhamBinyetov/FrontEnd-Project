@@ -158,6 +158,9 @@ body {
         &:hover {
           background-color: green;
         }
+        @media screen and (max-width: 501px) {
+          margin-left: 0px;
+        }
       }
     }
 
@@ -172,7 +175,7 @@ body {
         letter-spacing: 0.6px;
         text-transform: uppercase;
         color: white;
-        width: 17%;
+
         font-size: 14px;
         line-height: 25px;
         font-weight: 400;
@@ -206,7 +209,6 @@ body {
         letter-spacing: 0.6px;
         text-transform: uppercase;
         color: white;
-        width: 20%;
         font-size: 14px;
         line-height: 25px;
         font-weight: 400;
@@ -256,6 +258,10 @@ body {
         padding: 48px;
         border-radius: 16px;
         background-color: #5b35d5;
+        @media screen and (max-width: 768px) {
+          padding: 30px;
+          width: 100%;
+        }
         .mini-span {
           border: 1px solid white;
           color: white;
@@ -270,6 +276,9 @@ body {
           margin-top: 30px;
           color: #fff;
           width: 100%;
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+          }
         }
         .read-btn {
           background-color: $color-primary;
@@ -377,6 +386,73 @@ body {
           text-align: center;
           line-height: 150%;
         }
+      }
+    }
+
+    .sixth-remote-section {
+      background-color: $color-secondary;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+      a {
+        color: #867df3;
+      }
+      h2 {
+        line-height: 120%;
+        font-weight: 600;
+        margin-bottom: 24px;
+        font-size: 30px;
+        text-align: left;
+        margin-top: 30px;
+      }
+      .accordion {
+        color: white;
+        background-color: inherit;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 400;
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: inherit;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        p {
+          font-size: 16px;
+          color: #adaabf;
+          margin-top: 10px;
+          font-weight: 300;
+          text-align: left;
+          margin-bottom: 24px;
+          line-height: 150%;
+        }
+      }
+      .active,
+      .accordion:hover {
+        background-color: inherit;
+      }
+
+      .accordion:after {
+        content: "\2192";
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        font-size: 40px;
+      }
+
+      .active:after {
+        content: "\2193";
       }
     }
   }
