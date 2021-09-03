@@ -8714,6 +8714,90 @@ body header {
   body header .navbar-list .navbar-list-item:hover {
     background-color: #1b1734; }
 
+body main .first-blog-division p {
+  margin-bottom: 16px;
+  font-family: Rajdhani, sans-serif;
+  color: #ff9a83;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+
+body main .first-blog-division h1 {
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin-bottom: 16px; }
+
+body main .first-blog-division .wrapper {
+  margin-top: 15%; }
+  body main .first-blog-division .wrapper [data-tab-content] {
+    display: none; }
+  body main .first-blog-division .wrapper .active[data-tab-content] {
+    display: block; }
+  body main .first-blog-division .wrapper .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: auto; }
+    body main .first-blog-division .wrapper .buttons .active {
+      background-color: #0f0d1e;
+      border-color: 1px solid darkgreen; }
+  body main .first-blog-division .wrapper a {
+    padding: 16px 24px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+    border: 1px solid #322b5f;
+    border-radius: 4px;
+    background-color: #322b5f; }
+    body main .first-blog-division .wrapper a:hover {
+      background-color: rgba(50, 43, 95, 0.8); }
+  body main .first-blog-division .wrapper .contents .contents-images {
+    cursor: pointer;
+    transition: transform 0.2s; }
+    body main .first-blog-division .wrapper .contents .contents-images .card-body {
+      background-color: #1b1734;
+      padding: 15px;
+      width: 80%;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      height: 70%; }
+      body main .first-blog-division .wrapper .contents .contents-images .card-body .card-title {
+        color: white; }
+      body main .first-blog-division .wrapper .contents .contents-images .card-body .date-part {
+        padding-left: 20px;
+        color: #adaabf; }
+    body main .first-blog-division .wrapper .contents .contents-images img {
+      width: 80%;
+      height: 40%;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px; }
+    body main .first-blog-division .wrapper .contents .contents-images h5 {
+      margin-bottom: 24px;
+      line-height: 150%;
+      font-weight: 500;
+      padding-right: 32px;
+      padding-left: 15px;
+      text-align: left;
+      width: 90%;
+      font-size: 20px; }
+    body main .first-blog-division .wrapper .contents .contents-images p {
+      font-weight: 300;
+      padding-left: 20px;
+      text-align: left;
+      width: 80%;
+      font-size: 16px;
+      color: #adaabf;
+      margin-bottom: 20px; }
+    body main .first-blog-division .wrapper .contents .contents-images:hover {
+      transform: translateY(-5px); }
+
 body .footer {
   background-color: #0f0d1e;
   padding: 6.5rem 0; }

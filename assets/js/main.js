@@ -114,6 +114,40 @@ personalInformations.forEach(personalInformation => {
 
 })
 
+const buttons = document.querySelectorAll(`[data-tab-target]`);
+const contents = document.querySelectorAll('[data-tab-content]');
+
+const ClearInfo = function () {
+    buttons.forEach(button => {
+        button.classList.remove('active')
+    })
+    contents.forEach(content => {
+        content.classList.remove('active')
+    })
+}
+
+buttons.forEach(button => {
+    button.onclick = function () {
+        // ClearInfo();
+
+        const targetId = button.getAttribute("data-tab-target");
+        const targetContent = document.getElementById(targetId);
+        button.classList.add("active");
+        targetContent.classList.add("active");
+    }
+
+})
+
+// buttons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const target = button.getAttribute("data-tab-target")
+//         contents.forEach(content => {
+//             content.classList.remove('active')
+//         })
+//         target.classList.add('active');
+//     })
+// })
+
 const acc = document.getElementsByClassName("accordion");
 let i;
 
@@ -128,4 +162,5 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
 
