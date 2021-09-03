@@ -114,8 +114,8 @@ personalInformations.forEach(personalInformation => {
 
 })
 
-const buttons = document.querySelectorAll(`[data-tab-target]`);
-const contents = document.querySelectorAll('[data-tab-content]');
+const buttons = Array.from(document.querySelectorAll(`[data-tab-target]`));
+const contents = Array.from(document.querySelectorAll('[data-tab-content]'));
 
 const ClearInfo = function () {
     buttons.forEach(button => {
