@@ -127,8 +127,9 @@ const ClearInfo = function () {
 }
 
 buttons.forEach(button => {
-    button.onclick = function () {
-        // ClearInfo();
+    button.onclick = function (e) {
+        e.preventDefault();
+        ClearInfo();
 
         const targetId = button.getAttribute("data-tab-target");
         const targetContent = document.getElementById(targetId);
